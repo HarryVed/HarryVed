@@ -64,10 +64,11 @@ jobs:
           plugin_calendar: yes
           plugin_calendar_limit: 0
 
-      - name: LeetCode
+      - name: LeetCode Stats svg
         uses: lowlighter/metrics@latest
         with:
           filename: metrics.leetcode.svg
+          token: ${{ secrets.METRICS_TOKEN }}
           base: ""
           plugin_leetcode: yes
           plugin_leetcode_user: JitishxD
