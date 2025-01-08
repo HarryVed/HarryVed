@@ -64,6 +64,17 @@ jobs:
           plugin_calendar: yes
           plugin_calendar_limit: 0
 
+      - name: LeetCode
+        uses: lowlighter/metrics@latest
+        with:
+          filename: metrics.leetcode.svg
+          base: ""
+          plugin_leetcode: yes
+          plugin_leetcode_user: JitishxD
+          plugin_leetcode_sections: solved, skills, recent
+          plugin_leetcode_limit_skills: 10
+          plugin_leetcode_limit_recent: 3
+
       - name: Move output to working directory 📦
         run: sudo mv /metrics_renders/*.svg .
 
